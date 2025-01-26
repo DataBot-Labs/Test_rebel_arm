@@ -1,0 +1,215 @@
+<?xml version="1.0" ?>
+<robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find rebel_arm_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find rebel_arm_description)/urdf/arm.trans" />
+<xacro:include filename="$(find rebel_arm_description)/urdf/arm.gazebo" />
+<xacro:include filename="$(find rebel_arm_description)/urdf/ros2_control.xacro" />
+
+<link name="base_link">
+</link>
+
+<link name="link_0">
+  <inertial>
+    <origin xyz="2.6758679619289235e-14 0.0 0.02266233904051618" rpy="0 0 0"/>
+    <mass value="2.5346787978702183"/>
+    <inertia ixx="0.005207" iyy="0.005207" izz="0.009019" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_0.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_0.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_1">
+  <inertial>
+    <origin xyz="-5.567313502074602e-17 4.098862764811248e-17 -0.003294330259347028" rpy="0 0 0"/>
+    <mass value="0.05283781710784995"/>
+    <inertia ixx="2.4e-05" iyy="2.4e-05" izz="3.8e-05" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.00" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_1.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_2">
+  <inertial>
+    <origin xyz="4.208209917286061e-06 2.4287672297167474e-06 -0.012900153986197746" rpy="0 0 0"/>
+    <mass value="0.057783249767342296"/>
+    <inertia ixx="3.6e-05" iyy="3.6e-05" izz="7.1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_2.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_3">
+  <inertial>
+    <origin xyz="-0.01893394777000812 -0.0198227756761575 0.008078541713728321" rpy="0 0 0"/>
+    <mass value="0.9953039551471342"/>
+    <inertia ixx="0.002494" iyy="0.002414" izz="0.004866" ixy="-9.6e-05" iyz="2e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_3.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_4">
+  <inertial>
+    <origin xyz="-3.326885494954389e-06 -9.453818210990768e-11 0.004385481296303423" rpy="0 0 0"/>
+    <mass value="0.05938208856291772"/>
+    <inertia ixx="3.7e-05" iyy="3.7e-05" izz="7.3e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_4.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_5">
+  <inertial>
+    <origin xyz="-0.05003301392386567 0.00744711420020433 0.06537453945113983" rpy="0 0 0"/>
+    <mass value="0.7582173734794716"/>
+    <inertia ixx="0.001635" iyy="0.002653" izz="0.001251" ixy="0.0" iyz="0.000136" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_5.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_6">
+  <inertial>
+    <origin xyz="-2.198402479996289e-05 0.04289853923367516 7.979625855469852e-06" rpy="0 0 0"/>
+    <mass value="2.0006291062763104"/>
+    <inertia ixx="0.001765" iyy="0.000982" izz="0.001764" ixy="0.0" iyz="1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_6.dae" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find rebel_arm_description)/meshes/link_6.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="joint_0" type="fixed">
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link_0"/>
+</joint>
+
+<joint name="joint_1" type="revolute">
+  <origin xyz="0 0 0.104" rpy="0 0 0"/>
+  <parent link="link_0"/>
+  <child link="link_1"/>
+  <axis xyz="0 0 1"/>
+  <limit effort="1000.0" lower="${-pi}" upper="${pi}" velocity="2.5"/>
+</joint>
+
+<joint name="joint_2" type="revolute">
+  <origin xyz="0 -0.060768 0.1694" rpy="${-pi/2} ${-pi/2} ${pi}"/>
+  <parent link="link_1"/>
+  <child link="link_2"/>
+  <axis xyz="0 0 1"/>
+  <limit effort="1000.0" lower="${-pi/2}" upper="${pi/2}" velocity="2.5"/>
+</joint>
+
+<joint name="joint_3" type="revolute">
+  <parent link="link_2"/>
+  <child link="link_3"/>
+  <origin xyz="0.315 0 -0.0198" rpy="0 ${pi} 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="${-pi/1.2}" upper="${pi/1.2}" velocity="2.5"/>
+  </joint>
+
+<joint name="joint_4" type="revolute">
+  <parent link="link_3"/>
+  <child link="link_4"/>
+  <origin xyz="0.066258 0 0.036577" rpy="0 ${pi/2} 0"/>
+  <axis xyz="0 0 1"/>
+  <limit effort="1000.0" lower="${-pi}" upper="${pi}" velocity="2.5"/>
+</joint>
+
+  <joint name="joint_5" type="revolute">
+    <parent link="link_4"/>
+    <child link="link_5"/>
+    <origin xyz="0.02456 0 -0.319213" rpy="0 ${pi/2} ${pi}"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="${-pi/1.5}" upper="${pi/1.5}" velocity="2.5"/>
+  </joint>
+
+  <joint name="joint_6" type="revolute">
+    <parent link="link_5"/>
+    <child link="link_6"/>
+    <origin xyz="0.07318 0 0.02435" rpy="0 ${pi/2} 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="${-pi}" upper="${pi}" velocity="2.5"/>
+  </joint>
+
+<xacro:rebel_arm_ros2_control name="RebelArm" />
+
+</robot>
