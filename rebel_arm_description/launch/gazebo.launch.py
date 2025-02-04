@@ -33,11 +33,10 @@ def generate_launch_description():
         name='joint_state_publisher'
     )
 
-    # Execute the ros2 launch command with gz_args
     gz = ExecuteProcess(
         cmd=[
             'ros2', 'launch', 'ros_gz_sim', 'gz_sim.launch.py', 
-            'gz_args:=empty.sdf'
+            'gz_args:=-r empty.sdf'
         ],
         output='screen'
     )

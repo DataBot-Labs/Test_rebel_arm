@@ -12,7 +12,7 @@ class PositionCommandPublisher(Node):
     def publish_command(self):
         msg = Float64MultiArray()
         # Command positions for the six joints
-        msg.data = [0.5, 1.0, -0.5, 1.2, 0.0, -1.0]  # Replace with desired positions
+        msg.data = [0.0, 1.0, -0.5, 1.2, 0.0, -1.0]  # Replace with desired positions
         self.publisher_.publish(msg)
         self.get_logger().info(f'Publishing commands: {msg.data}')
 
