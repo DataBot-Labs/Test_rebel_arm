@@ -85,7 +85,6 @@
   name="ign_ros2_control::IgnitionROS2ControlPlugin">
   <robot_param>robot_description</robot_param>
   <robot_param_node>robot_state_publisher</robot_param_node>
-  <robot_sim_type>gz_ros2_control-system/GazeboSimSystem</robot_sim_type>
   <parameters>$(find rebel_arm_description)/config/rebel_arm_controllers.yaml</parameters>
   </plugin>
   </gazebo>  

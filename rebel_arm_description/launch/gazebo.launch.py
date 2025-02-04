@@ -8,6 +8,7 @@ import os
 from launch.substitutions import LaunchConfiguration
 import xacro
 from ament_index_python.packages import get_package_share_directory
+from controller_manager import spawner
 
 def generate_launch_description():
     share_dir = get_package_share_directory('rebel_arm_description')
@@ -66,11 +67,12 @@ def generate_launch_description():
         output='screen',
         arguments=["joint_state_broadcaster"])
 
-    forward_position_controller=Node(
-        package='controller_manager',
-        executable='spawner',
+    position_controller = Node(
+        package="controller_manager",
+        executable="spawner",
         output='screen',
-        arguments=["forward_position_controller"])
+        arguments=["forward_position_controller", "-c", "/controller_manager"],
+    )
     
     
     return LaunchDescription([
@@ -78,6 +80,6 @@ def generate_launch_description():
         spawn_entity,
         robot_state_publisher_node,
         joint_state_publisher_node,
-        forward_position_controller,
-        joint_state_broadcaster,
+        #position_controller,
+        #joint_state_broadcaster,
     ])

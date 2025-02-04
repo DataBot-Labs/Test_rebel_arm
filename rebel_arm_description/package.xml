@@ -6,13 +6,20 @@
   <description>The rebel_arm_description package</description>
   <maintainer email="b.vanderhaagen76@gmail.com">author</maintainer>
   <license>TODO: License declaration</license>
-
+  <!-- Fortress -->
+  <depend condition="$IGNITION_VERSION == fortress">ignition-gazebo6</depend>
+  <depend condition="$IGNITION_VERSION == fortress">ignition-msgs8</depend>
+  <depend condition="$IGNITION_VERSION == edifice">ignition-transport11</depend>
   <depend>xacro</depend>
   <depend>rviz2</depend>
   <depend>robot_state_publisher</depend>
   <depend>joint_state_publisher</depend>
   <depend>joint_state_publisher_gui</depend>
-
+  <depend>pluginlib</depend>
+  <depend>urdf</depend>
+  <depend>transmission_interface</depend>
+  <depend>hardware_interface</depend>
+  <depend>controller_manager</depend>
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
