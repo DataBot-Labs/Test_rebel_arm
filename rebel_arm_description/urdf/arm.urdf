@@ -67,9 +67,9 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo>
+  <!--<gazebo>
     <plugin filename="libign_ros2_control-system.so" name="ign_ros2_control::IgnitionROS2ControlPlugin"/>
-  </gazebo>
+  </gazebo> -->
   <gazebo reference="base_link">
     <material>Gazebo/Silver</material>
     <mu1>0.2</mu1>
@@ -530,10 +530,10 @@
     <axis xyz="0 0 1"/>
     <limit effort="1000.0" lower="-3.141592653589793" upper="3.141592653589793" velocity="2.5"/>
   </joint>
-  <ros2_control name="IgnitionSystem" type="system">
-    <hardware>
-      <plugin>ign_ros2_control/IgnitionSystem</plugin>
-    </hardware>
+  <ros2_control name="Robot" type="system">
+      <hardware>
+        <plugin>fake_components/GenericSystem</plugin>
+      </hardware>
     <joint name="joint_1">
       <command_interface name="position">
         <param name="min">-6.283185307179586</param>
@@ -601,11 +601,11 @@
       <state_interface name="effort"/>
     </joint>
   </ros2_control>
-  <gazebo>
+  <!--<gazebo>
     <plugin filename="libign_ros2_control-system.so" name="ign_ros2_control::IgnitionROS2ControlPlugin">
       <robot_param>robot_description</robot_param>
       <robot_param_node>robot_state_publisher</robot_param_node>
       <parameters>/home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/config/rebel_arm_controllers.yaml</parameters>
     </plugin>
-  </gazebo>
+  </gazebo>-->
 </robot>
