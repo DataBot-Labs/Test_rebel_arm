@@ -352,14 +352,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_0.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_0.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_0.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -372,14 +372,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.00"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_1.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_1.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -392,14 +392,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_2.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_2.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.0 -0.0 -0.0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -412,14 +412,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_3.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_3.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -432,14 +432,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_4.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_4.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -452,14 +452,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_5.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_5.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -472,14 +472,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_6.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_6.dae" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/meshes/link_6.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="file:///home/med-islam/Desktop/work/rebel_arm_ros2_control/src/rebel_arm_description/meshes/link_6.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
