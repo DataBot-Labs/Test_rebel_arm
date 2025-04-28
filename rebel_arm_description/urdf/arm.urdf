@@ -601,11 +601,11 @@
       <state_interface name="effort"/>
     </joint>
   </ros2_control>
-  <!--<gazebo>
+  <gazebo>
     <plugin filename="libign_ros2_control-system.so" name="ign_ros2_control::IgnitionROS2ControlPlugin">
       <robot_param>robot_description</robot_param>
       <robot_param_node>robot_state_publisher</robot_param_node>
       <parameters>/home/med-islam/Desktop/work/rebel_arm_ros2_control/install/rebel_arm_description/share/rebel_arm_description/config/rebel_arm_controllers.yaml</parameters>
     </plugin>
-  </gazebo>-->
+  </gazebo>
 </robot>
